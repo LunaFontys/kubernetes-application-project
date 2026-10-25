@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: luna985/azure-terraform-webapp:v1
+          image: luna985/azure-terraform-webapp:v3
 
           ports:
             - containerPort: 3000
