@@ -68,13 +68,9 @@ A Deployment describes the desired state of an application, such as the containe
 
 
 
-**Service:** A Service exposes a set of Pods through a stable network endpoint. Pods can be created, deleted and replaced, which means their IP addresses can change. Instead of connecting directly to a Pod IP, other applications can connect to the Service. The Service keeps track of the matching Pods and sends traffic to them. A frontend Pod needs to communicate with backend Pods. The backend Pods can be recreated and their IP addresses can change, so the frontend should not connect directly to a specific backend Pod IP. A Service gives the backend a stable network endpoint and routes traffic to the backend Pods that match the Service.
+**Service:** A Service exposes a set of Pods through a stable network endpoint. Pods can be created, deleted and replaced, which means their IP addresses can change. Instead of connecting directly to a Pod IP, other applications can connect to the Service. The Service keeps track of the matching Pods and sends traffic to them.
 
 
 
 **Kubelet:** Each node has a kubelet process running on it which makes it possible for the nodes to communicatie to each other and the preform some tasks like running application processes.
-
-
-
-
 
